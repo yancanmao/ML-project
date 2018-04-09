@@ -11,6 +11,7 @@ import numpy as np
 
 rawdata = np.load('new_heart_disease.npy')
 # print(rawdata)
+for i in range(0)
 data = xgb.DMatrix(rawdata[323:626,:-1],label=(rawdata[323:626,-1]>0)) # cleveland only
 params = {
             'booster':'gbtree',
