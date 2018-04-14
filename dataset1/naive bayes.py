@@ -134,10 +134,6 @@ best_std   = []
 best_comb  = []
 nfeatures  = 18
 iterable   = range(nfeatures)
-for s in xrange(len(iterable)+1):
-    for comb in itertools.combinations(iterable, s):
-        print (comb)
-sys.exit(0)
 gnb        = GaussianNB()
 for s in xrange(len(iterable)+1):
     for comb in itertools.combinations(iterable, s):

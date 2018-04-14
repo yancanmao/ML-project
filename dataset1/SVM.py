@@ -44,7 +44,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 import itertools
 from pprint import pprint
-
+from sklearn.externals import joblib
 # Given two histograms x and y (with the same range and binning), the following function
 # calculates the intrinsic discrepancy (a symmetrized Kullback-Leibler distance) between them.
 def intrinsic_discrepancy(x,y):
@@ -137,33 +137,35 @@ best_comb  = []
 nfeatures  = 18
 iterable   = range(nfeatures)
 model      = SVC()
-for s in xrange(len(iterable)+1):
-    for comb in itertools.combinations(iterable, s):
-        print (comb)
-        if len(comb) > 0:
-            Xsel = []
-            for patient in Xall:
-                Xsel.append([patient[ind] for ind in comb])
-            this_scores = cross_val_score(model, Xsel, y=yall, cv=3 )
-            score_mean  = np.mean(this_scores)
-            score_std   = np.std(this_scores)
-            if len(best_score) > 0: 
-                if score_mean > best_score[0]:
-                    best_score = []
-                    best_std   = []
-                    best_comb  = []
-                    best_score.append(score_mean)
-                    best_std.append(score_std)
-                    best_comb.append(comb)
-                elif score_mean == best_score[0]:
-                    best_score.append(score_mean)
-                    best_std.append(score_std)
-                    best_comb.append(comb)
-            else:
-                best_score.append(score_mean)
-                best_std.append(score_std)
-                best_comb.append(comb)
+# for s in xrange(len(iterable)+1):
+#     for comb in itertools.combinations(iterable, s):
+#         print (comb)
+comb = [0,1,4,5,6,7,8,10,14,16,17]
+if len(comb) > 0:
+    Xsel = []
+    for patient in Xall:
+        Xsel.append([patient[ind] for ind in comb])
+    this_scores = cross_val_score(model, Xsel, y=yall, cv=3 )
+    score_mean  = np.mean(this_scores)
+    score_std   = np.std(this_scores)
+    if len(best_score) > 0: 
+        if score_mean > best_score[0]:
+            best_score = []
+            best_std   = []
+            best_comb  = []
+            best_score.append(score_mean)
+            best_std.append(score_std)
+            best_comb.append(comb)
+        elif score_mean == best_score[0]:
+            best_score.append(score_mean)
+            best_std.append(score_std)
+            best_comb.append(comb)
+    else:
+        best_score.append(score_mean)
+        best_std.append(score_std)
+        best_comb.append(comb)
 num_ties = len(best_score)
 for ind in range(num_ties):
     print ('For comb=%s, Support Vector Classifier Accuracy = %f +/- %f' \
                 % (best_comb[ind],best_score[ind],best_std[ind]))
+joblib.dump(model, 'svm.pkl')
