@@ -125,6 +125,7 @@ from keras.models import Sequential
 from keras.layers import LSTM
 from keras.layers.core import Dropout, Flatten, Activation, Dense
 import math
+import numpy as np
 
 def make_model(activ,opti,ip,layers,trainx,trainy,testx,testy):
     model = Sequential()
@@ -138,7 +139,11 @@ def make_model(activ,opti,ip,layers,trainx,trainy,testx,testy):
     print ("Train Score: ",100-trainScore[0]*100)
     testScore = model.evaluate(testx,testy, verbose=0)
     print ("Test Score: ",100-testScore[0]*100)
-    
+
+    ret1 = model.predict(testx)
+    ret2 = model.predict(trainx)
+    print (np.int16(ret1))
+    print (np.int16(ret2))
     return model
 
 #without k best features,sigmoid and rmsprop
