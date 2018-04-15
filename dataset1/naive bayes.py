@@ -135,32 +135,33 @@ best_comb  = []
 nfeatures  = 18
 iterable   = range(nfeatures)
 gnb        = GaussianNB()
-for s in xrange(len(iterable)+1):
-    for comb in itertools.combinations(iterable, s):
-        print (comb)
-        if len(comb) > 0:
-            Xsel = []
-            for patient in Xall:
-                Xsel.append([patient[ind] for ind in comb]) 
-            this_scores = cross_val_score(gnb, Xsel, y=yall, cv=3)
-            score_mean  = np.mean(this_scores)
-            score_std   = np.std(this_scores)
-            if len(best_score) > 0: 
-                if score_mean > best_score[0]:
-                    best_score = []
-                    best_std   = []
-                    best_comb  = []
-                    best_score.append(score_mean)
-                    best_std.append(score_std)
-                    best_comb.append(comb)
-                elif score_mean == best_score[0]:
-                    best_score.append(score_mean)
-                    best_std.append(score_std)
-                    best_comb.append(comb)
-            else:
-                best_score.append(score_mean)
-                best_std.append(score_std)
-                best_comb.append(comb)
+# for s in xrange(len(iterable)+1):
+#     for comb in itertools.combinations(iterable, s):
+comb = [0,1,3,5,6,7,8,9,11,14,17]
+print (comb)
+if len(comb) > 0:
+    Xsel = []
+    for patient in Xall:
+        Xsel.append([patient[ind] for ind in comb]) 
+    this_scores = cross_val_score(gnb, Xsel, y=yall, cv=3)
+    score_mean  = np.mean(this_scores)
+    score_std   = np.std(this_scores)
+    if len(best_score) > 0: 
+        if score_mean > best_score[0]:
+            best_score = []
+            best_std   = []
+            best_comb  = []
+            best_score.append(score_mean)
+            best_std.append(score_std)
+            best_comb.append(comb)
+        elif score_mean == best_score[0]:
+            best_score.append(score_mean)
+            best_std.append(score_std)
+            best_comb.append(comb)
+    else:
+        best_score.append(score_mean)
+        best_std.append(score_std)
+        best_comb.append(comb)
 num_ties = len(best_score)
 for ind in range(num_ties):
     print ('For comb=%s, Gaussian Naive Bayes Accuracy = %f +/- %f' \
