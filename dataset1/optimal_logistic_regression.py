@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # Create Pandas dataframe.
 columns = ["age", "sex", "cp", "restbp", "chol", "fbs", "restecg", 
            "thalach", "exang", "oldpeak", "slope", "ca", "thal", "num"]
-df0     = pd.read_table("../HeartDiseaseStudy/data/heart_disease_all14.csv", sep=',', header=None, names=columns)
+df0     = pd.read_table("data/heart_disease_all14.csv", sep=',', header=None, names=columns)
 df      = df0.copy()
 dummies = pd.get_dummies(df["cp"],prefix="cp")
 df      = df.join(dummies)

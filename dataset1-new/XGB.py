@@ -131,9 +131,9 @@ from xgboost import plot_importance
 from matplotlib import pyplot
 plot_importance(model)
 # pyplot.show()
-from xgboost import plot_tree
-plot_tree(model)
-pyplot.show()
+# from xgboost import plot_tree
+# plot_tree(model)
+# pyplot.show()
 # data = xgb.DMatrix(x_train,label=(y_train>0))
 # params = {
 #             'booster':'gbtree',
