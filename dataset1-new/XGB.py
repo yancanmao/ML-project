@@ -130,26 +130,26 @@ print("Accuracy: %.2f%%" % (accuracy * 100.0))
 from xgboost import plot_importance
 from matplotlib import pyplot
 plot_importance(model)
-# pyplot.show()
+pyplot.show()
 # from xgboost import plot_tree
 # plot_tree(model)
 # pyplot.show()
-# data = xgb.DMatrix(x_train,label=(y_train>0))
-# params = {
-#             'booster':'gbtree',
-#             'objective':'multi:softmax',
-#             'num_class':2,
-#             'eta':0.5,
-#             'max_depth':70,
-#             'subsample':1.0,
-#             'min_child_weight':5,
-#             'colsample_bytree':0.75,
-#             'scale_pos_weight':0.9,
-#             'eval_metric':'merror',
-#             'gamma':0.3,
-#             'lambda':200
-# }
-# num_round = 100
-# ret = xgb.cv(params,data,num_boost_round=num_round,nfold=10)
+data = xgb.DMatrix(x_train,label=(y_train>0))
+params = {
+            'booster':'gbtree',
+            'objective':'multi:softmax',
+            'num_class':2,
+            'eta':0.5,
+            'max_depth':70,
+            'subsample':1.0,
+            'min_child_weight':5,
+            'colsample_bytree':0.75,
+            'scale_pos_weight':0.9,
+            'eval_metric':'merror',
+            'gamma':0.3,
+            'lambda':200
+}
+num_round = 100
+ret = xgb.cv(params,data,num_boost_round=num_round,nfold=10)
 
-# print('test-auc: ',1-ret.iloc[num_round-1][0])
+print('test-auc: ',1-ret.iloc[num_round-1][0])

@@ -74,10 +74,9 @@ There are many missing attribute values in UCI dataset. In addition, the Clevela
 \caption{Attributes}
 \label{fig:dataset-1}
 \end{figure}
+UCI dataset was used at the first step of our application, it provides basic information. Because UCI dataset's attributes are limited and could be commonly measured, our application uses UCI dataset to train a general classifier. We have trained it with five models, they are GBDT in LightGBM, Naive Bayes, SVM, Neural Network and Logistic Regression. After comparing the accuracy between these models with tried every model's best performance in this dataset(will be shown in next chapter) and every member of our group developed one of models in this dataset. Finally we found that GBDT had highest and stable accuracy about 89.57\%. As a result, we chose LightGBM as our final training library. LightGBM is efficient, low memory usage and better accuracy with a gradient boosting method. Additionally, LightGBM can be used for nearly all regression problems, our classifier is exactly one of them.
 
-Because UCI dataset's attributes are limited and could be commonly measured, our application uses UCI dataset to train a general classifier. We have trained it with five models, they are GBDT in LightGBM, Naive Bayes, SVM, Neural Network and Logistic Regression. After comparing the accuracy between these models( will be shown in next chapter), we tried every model's best performance in this dataset and every member of our group developed one models in this dataset. Finally We found that GBDT had highest and stable accuracy about 89.57\%. As a result, we chose LightGBM as our final training library. LightGBM is efficient, low memory usage and better accuracy with a gradient boosting method. Additionally, LightGBM can be used for nearly all regression problems, our classifier is exactly one of them.
-
-In LightGBM, we have taken a lot of time in reading the documentation and trying to understand the principle of GBDT, such as what is gradient and boosting. Besides, when using default parameters in LightGBM model, we got an accuracy 82.83\% which is too low. Therefore, we tried to improve the accuracy of model's performance. On the one hand, we eliminated some least important attributes in this model by using Pandas, the importance of every attributes using in LightGBM are shown at Figure \ref{fig:dataset-1-impor}, we attempted to eliminate FBS and RESTECG, but the accuracy dropped, so we didn't modify attributes using this model. On the other hand, we modified LightGBM model's attributes by using a script, this script continuously modifies parameters of model's like number of leaves, minimum data in a leaf, learning rate and so on, then find the parameters result with best accuracy. Finally, we got a optimal result, and the tree is shown at Figure \ref{fig:dataset-1-res}.
+In LightGBM, we have taken a lot of time in reading the documentation and trying to understand the principle of GBDT, such as what is gradient and boosting. Besides, when using default parameters in LightGBM model, we got an accuracy 82.83\% which is too low. Therefore, we tried to improve the accuracy of model's performance. On the one hand, we eliminated some least important attributes in this model by using Pandas, the importance of every attributes using in LightGBM are shown at Figure \ref{fig:dataset-1-impor}, we attempted to eliminate FBS and RESTECG, but the accuracy dropped, so we didn't modify attributes using this model. On the other hand, we modified LightGBM model's attributes by using a script, this script continuously modifies parameters of model's like number of leaves, minimum data in a leaf, learning rate and so on, then find the parameters result with best accuracy. Finally, we got a optimal result with accuracy 89.57\%.
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.5\textwidth]{dataset-1-impor}
@@ -85,11 +84,6 @@ In LightGBM, we have taken a lot of time in reading the documentation and trying
 \label{fig:dataset-1-impor}
 \end{figure}
 
-\begin{figure}[!htbp]
-\centering\includegraphics[width=0.5\textwidth]{dataset-1-res}
-\caption{Optimal LightGBM tree}
-\label{fig:dataset-1-res}
-\end{figure}
 \subsubsection{Dataset2 Result}
 
 \subsubsection{Dataset3 Result}
@@ -111,16 +105,29 @@ IDE install, requirement install.
 \subsection{Model Comparison}
 
 The information we can derive the heart sound is limited as it is prone to be contaminated by environment noise. Basically, we are able to observe two types of abnormalities in a piece of heart sound: murmur, which indicates the blood reverse flow caused by mitral insufficiency, and extra systole, which indicates myocardial injury. These two kinds of abnormalities are independent, so we extract the starting part of Fourier transform power (frequency lower than 470Hz) and a binary sequence marking the existence of heart beat pulse in 0.075s time interval (about the width of a pulse) as sequential features for murmur heart sound and extra systole respectively. We built two two-layer LSTM model to classify these sequential features. The evaluation of the two models are shown below:
+
 TO BE ADDED
+
 [insert table here]
+
 As explained above, our heart disease testing based on three data sources: biographical information, ECG and heart sound.
+
 We regard biographical information as a vector indicating a sample in the sample space. And for the ECG data, we use the method introduced by Guvenir et al. in \cite{ECG} to extract a 275 dimensional feature for each sample.  For such classification task, we tested four binary classification models: support vector machine (SVM), logistic regression, naïve Bayes and gradient boosting decision tree (GBDT). 
-The performance of the four models on dataset1 and dataset2 are shown at Figure \ref{fig:dataset-1-comparison}:
+The performance of the four models on dataset1 and dataset2 are shown at Figure \ref{fig:dataset-1-comparison}, we have implemented all of those models into UCI dataset and dataset2(later modify), and the type of UCI dataset and dataset2 are both text(professional word), our process method in processing these two datasets is similar. We will introduce how we get the optimal accuracy of each model.
+
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.4\textwidth]{dataset-1-comparison}
 \caption{The result of using different model with optimal attributes}
 \label{fig:dataset-1-comparison}
 \end{figure}
+
+\subsubsection{Logistic Regression} 
+
+\subsubsection{GBDT}
+
+\subsubsection{SVM}
+
+\subsubsection{Naive Bayes}
 
 \section{Conclusion}
 
