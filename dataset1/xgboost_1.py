@@ -12,20 +12,20 @@ import csv
 from xgboost import plot_tree
 import matplotlib.pyplot as plt
 
-def loadCSVfile():
-      return np.loadtxt("data/heart_disease_all14.csv", dtype=np.str, delimiter=",")
+# def loadCSVfile():
+#       return np.loadtxt("data/heart_disease_all14.csv", dtype=np.str, delimiter=",")
 
-def loadData(filename):
-    data_reader = csv.reader(open(filename,'r'))
-    data = []
-    for row in data_reader:
-        data.append(row)
-    data = np.asarray(data,dtype='float32')
-    return data
+# def loadData(filename):
+#     data_reader = csv.reader(open(filename,'r'))
+#     data = []
+#     for row in data_reader:
+#         data.append(row)
+#     data = np.asarray(data,dtype='float32')
+#     return data
 
-rawdata = loadData("data/data_combined.csv")
+# rawdata = loadCSVfile()
 
-# rawdata = np.load('new_heart_disease.npy')
+rawdata = np.load('new_heart_disease.npy')
 # print(rawdata[:1])
 # sys.exit(0)
 max = 0
@@ -56,5 +56,5 @@ ret = xgb.cv(params,data,num_boost_round=num_round,nfold=10)
 # 	y=j
 print('test-auc: ',1-ret.iloc[num_round-1][0])
 
-plot_tree(ret)
+# plot_tree(ret)
 

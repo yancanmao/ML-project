@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  16 APR 2018 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  18 APR 2018 15:17
 entering extended mode
 **./report.tex
 (report.tex
@@ -62,19 +62,19 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -144,22 +144,22 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
+(Font)              <5> on input line 33.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no î in font ptmr7t!
@@ -167,7 +167,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -179,40 +179,68 @@ Missing character: There is no ù in font ptmr7t!
 
 
 ]
+<dataset-1.jpg, id=8, 881.54344pt x 818.30719pt>
+File: dataset-1.jpg Graphic file (type jpg)
+<use dataset-1.jpg>
+Package pdftex.def Info: dataset-1.jpg  used on input line 73. on input line 73
+.
+Package pdftex.def Info: Requested size: 202.3529pt x 187.83209pt on input line
+ 73.
+<dataset-1-impor.png, id=9, 1084.05pt x 722.7pt>
+File: dataset-1-impor.png Graphic file (type png)
+<use dataset-1-impor.png>
+Package pdftex.def Info: dataset-1-impor.png  used on input line 83. on input l
+ine 83.
+Package pdftex.def Info: Requested size: 252.94499pt x 168.62149pt on input lin
+e 83.
 
-LaTeX Warning: Citation `cite1' on page 2 undefined on input line 80.
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 83--84
+ [][] 
+ []
 
+<dataset-1-res.png, id=11, 7227.0pt x 1806.75pt>
+File: dataset-1-res.png Graphic file (type png)
+<use dataset-1-res.png>
+Package pdftex.def Info: dataset-1-res.png  used on input line 89. on input lin
+e 89.
+Package pdftex.def Info: Requested size: 252.94499pt x 63.21513pt on input line
+ 89.
 
-LaTeX Warning: Citation `cite2' on page 2 undefined on input line 80.
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 89--90
+ [][] 
+ []
 
+[2 <./dataset-1.jpg> <./dataset-1-impor.png> <./dataset-1-res.png>]
 
-LaTeX Warning: Citation `cite3' on page 2 undefined on input line 80.
+LaTeX Warning: Citation `ECG' on page 3 undefined on input line 117.
 
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no Ø in font ptmr7t!
+<dataset-1-comparison.jpg, id=17, 917.67844pt x 204.01219pt>
+File: dataset-1-comparison.jpg Graphic file (type jpg)
+<use dataset-1-comparison.jpg>
+Package pdftex.def Info: dataset-1-comparison.jpg  used on input line 120. on i
+nput line 120.
+Package pdftex.def Info: Requested size: 202.3529pt x 44.98553pt on input line 
+120.
+[3
 
-LaTeX Warning: Citation `cite4' on page 2 undefined on input line 80.
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-
-LaTeX Warning: Citation `cite5' on page 2 undefined on input line 80.
-
-[2] (report.aux) ) 
+ <./dataset-1-comparison.jpg>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 1609 strings out of 493312
- 23070 string characters out of 3138894
- 84651 words of memory out of 3000000
- 5149 multiletter control sequences out of 15000+200000
+ 1632 strings out of 493312
+ 23579 string characters out of 3138894
+ 84698 words of memory out of 3000000
+ 5165 multiletter control sequences out of 15000+200000
  15090 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,25p,2066b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (2 pages, 50587 bytes).
+ 41i,10n,25p,1305b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts
+/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (3 pages, 534359 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
