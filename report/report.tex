@@ -50,7 +50,7 @@ To achieve this goal we use 3 datasets, one dataset for each step. The first dat
 
 \subsubsection{LSTM}
 
-Long Short-Term Memory is a variant of recurrent neural network, which uses special units that can maintain information in memory for long periods of time in addition to standard units, which allows for a better control over the gradient flow and enable better preservation of “long-range dependencies”. The key point for implementing LSTM is to figure out what to forget, save and ignore as a memory cell. Since LSTM is a state-of-art deep learning method and has been widely used on different topics with great performance, we picked this model to see how it works for our application. And thankfully we got an optimal result with ..% accuray which indicates that LSTM is truly working well for datas that …(describe the property of this dataset)
+Long Short-Term Memory is a variant of recurrent neural network, which uses special units that can maintain information in memory for long periods of time in addition to standard units, which allows for a better control over the gradient flow and enable better preservation of “long-range dependencies”. The key point for implementing LSTM is to figure out what to forget, save and ignore as a memory cell. Since LSTM is a state-of-art deep learning method and has been widely used on different topics with great performance, we picked this model to see how it works for our application.
 
 
 \subsubsection{GBDT}
@@ -120,13 +120,21 @@ The performance of the four models on dataset1 and dataset2 are shown at Figure 
 \label{fig:dataset-1-comparison}
 \end{figure}
 
-\subsubsection{Logistic Regression} 
+\subsection{Optimization method}
 
-\subsubsection{GBDT}
+We used Sklearn to invoke both Logistic Regression, SVM and Naive Bayes models, and logistic regression has the secondly good accuracy in both UCI dataset and dataset2. The optimization method for both of these three method is to select columns to make the cross validation be best. Excepting for select columns method, we also have different method for different models.
 
-\subsubsection{SVM}
+\subsection{Logistic Regression Optimization}
 
-\subsubsection{Naive Bayes}
+For Logistic Regression, we 
+
+\subsection{SVM Optimization}
+
+For SVM, we
+
+\subsection{Naive Bayes Optimization}
+
+For Naive Bayes, we
 
 \section{Conclusion}
 
