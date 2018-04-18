@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  18 APR 2018 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  18 APR 2018 18:34
 entering extended mode
 **./report.tex
 (report.tex
@@ -200,17 +200,17 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 82--83
 
 [2 <./dataset-1.jpg> <./dataset-1-impor.png>]
 
-LaTeX Warning: Citation `ECG' on page 3 undefined on input line 115.
+LaTeX Warning: Citation `ECG' on page 3 undefined on input line 114.
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
 <dataset-1-comparison.jpg, id=15, 931.22906pt x 204.01219pt>
 File: dataset-1-comparison.jpg Graphic file (type jpg)
 <use dataset-1-comparison.jpg>
-Package pdftex.def Info: dataset-1-comparison.jpg  used on input line 119. on i
-nput line 119.
+Package pdftex.def Info: dataset-1-comparison.jpg  used on input line 118. on i
+nput line 118.
 Package pdftex.def Info: Requested size: 202.3529pt x 44.3287pt on input line 1
-19.
+18.
 [3 <./dataset-1-comparison.jpg>] (report.aux) ) 
 Here is how much of TeX's memory you used:
  1626 strings out of 493312
@@ -224,7 +224,7 @@ Here is how much of TeX's memory you used:
 ts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (3 pages, 249132 bytes).
+Output written on report.pdf (3 pages, 249504 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
