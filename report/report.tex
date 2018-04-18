@@ -50,18 +50,18 @@ To achieve this goal we use 3 datasets, one dataset for each step. The first dat
 
 \subsubsection{LSTM}
 
-Long Short-Term Memory is a variant of recurrent neural network, which uses special units that can maintain information in memory for long periods of time in addition to standard units, which allows for a better control over the gradient flow and enable better preservation of “long-range dependencies”. The key point for implementing LSTM is to figure out what to forget, save and ignore as a memory cell. Since LSTM is a state-of-art deep learning method and has been widely used on different topics with great performance, we picked this model to see how it works for our application. And thankfully we got an optimal result with ..% accuray which indicates that LSTM is truly working well for datas that …(describe the property of this dataset)
+Long Short-Term Memory is a variant of recurrent neural network, which uses special units that can maintain information in memory for long periods of time in addition to standard units, which allows for a better control over the gradient flow and enable better preservation of “long-range dependencies”. The key point for implementing LSTM is to figure out what to forget, save and ignore as a memory cell. Since LSTM is a state-of-art deep learning method and has been widely used on different topics with great performance, we picked this model to see how it works for our application. 
+
+To implement this model, our app uses a function [name of the function] that [describe how does it work]. Also it should be noted that we implement [another function or class defined]
+To have a better performance, we [tune this parameter ……] and thankfully got an optimal result with ..\% accuray instead of previous  ..\%
 
 
 \subsubsection{GBDT}
 
-Gradient boosting is a machine learning technique for regression, classification and sorting tasks. It belongs to boosting algorithm family, which can enhance a weak learner to a strong learner. Boosting algorithms are based on the idea that it?s better to get a result by synthesizing many experts? judgements than getting it from only one of them. Gradient boosting, same as other boosting algorithms, constructs the final prediction model with an ensemble of many weak learners, usually decision tree. This is what we call Gradient Boosting Decision Tree(GBDT).
+Gradient Boosting Decision Tree is a machine learning technique and belongs to boosting algorithm family. It constructs the final prediction model with an ensemble of many weak learners, usually decision tree, based on the idea that it’s better to get a result by synthesizing many experts’ judgements than getting it from only one of them. The main part for boosting is to have the weak learner make up for the deficiency of the existing model at every step of iteration. Gradient boosting does it by construct a learner that reduces the loss along the steepest gradient in each step. Gradient boosting has an enormous scope of application since it is capable of processing all kinds of learning tasks by setting different loss functions. It can resist noise in training data effectively as well. According to above, GBDT is one of the best, state-of-the-art machine learning algorithms. Therefore, we choose it for our first two datasets. 
 
-Boosting is one of the major methods of ensemble learning. It constructs model using a stage-wise iterative method. The weak learner constructed at every step of iteration is designed to make up for the deficiency of the existing model. Gradient boosting does it by construct a learner that reduces the loss along the steepest gradient in each step. Gradient boosting has an enormous scope of application since it is capable of processing all kinds of learning tasks by setting different loss functions. It can resist noise in training data effectively as well.
-
-Gradient boosting algorithm tends to use decision tree because this algorithm is easy to understand and has strong interpretability and rapid forecasting speed. Also, decision tree algorithm can process data with missing fields well and do not need to consider interdependence between features.
-
-According to above, Gradient Boosting Decision Tree is one of the best, state-of-the-art machine learning algorithms. Therefore, we choose it for our first two datasets.
+To implement GBDT for our dataset, our app uses a function [name] that [ ... ]. Also it should be noted that we implement [another function or class defined]
+To have a better performance, we [tune this parameter ……] and thankfully got an optimal result with ..\% accuray instead of previous  ..\%  for dataset1 and also ..\% accuray instead of previous  ..\%  for dataset2.
 
 \subsection{Application Training result}
 
@@ -92,9 +92,15 @@ In LightGBM, we have taken a lot of time in reading the documentation and trying
 
 \subsection{Application Display}
 
-show the final result of our app.
+Below are our final application.
 
-show some figure of our application.
+[insert ap picture here]
+
+Using this application, we ran the app over all datasets to obtain the following performance results.
+
+[insert result table here]
+
+To obtain this result, we ran four different models including Logistic regression, GBDT, Naive Bayes and SVM for the first two datasets and LSTM for the third dataset. We did tuning for each model to obtain a better accuracy and picked the optimal model for each dataset. Based on the work that we have done so far, we believe that out application achieve a good and stable performance.
 
 \section{Experiment}
 
