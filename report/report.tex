@@ -122,11 +122,11 @@ The performance of the four models on dataset1 and dataset2 are shown at Figure 
 
 \subsection{Optimization method}
 
-We used Sklearn to invoke both Logistic Regression, SVM and Naive Bayes models, and logistic regression has the secondly good accuracy in both UCI dataset and dataset2. The optimization method for both of these three method is to select columns to make the cross validation be best. Excepting for select columns method, we also have different method for different models.
+We used Sklearn to invoke both Logistic Regression, SVM and Naive Bayes models, and logistic regression has the secondly good accuracy in both UCI dataset and dataset2. The optimization method for both of these three method is to select columns to make the cross validation be best, which aims to avoid overfit. Excepting for select columns method, we also have different method for different models.
 
 \subsection{Logistic Regression Optimization}
 
-For Logistic Regression, we 
+In Logistic Regression, things we should do are to analyse the fit coefficient, and drop columns with negative fit coefficient. In this way, our training time shortened a lot. We also tried some parameters Sklearn provides, we modified penalty parameter to 'l1' to avoid overfit, and we tried C parameter to modify inverse of regularization strength.
 
 \subsection{SVM Optimization}
 
