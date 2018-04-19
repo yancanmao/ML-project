@@ -91,11 +91,25 @@ In LightGBM, we have taken a lot of time in reading the documentation and trying
 \subsubsection{Most Painful Experience}
 
 \subsection{Application Display}
+We design a web application with Bottle[] as the back-end framework of our application and Bootstrap[] as the front-end library. We provide two functions for our users:
+\begin{itemize}
+\item Predict the risk of heart disease based on most attributes same as UCI dataset
+\item Predict murmur or extrastole risk of heart based on heart sound wav file
+\end{itemize}
 
-show the final result of our app.
+For the first function, users have to fill 14 attributes such as age, sex and so on to get better accurate prediction. We use models on dataset1 and dataset2 then we compare results from different model and get a ranking of the risk. We'll return a result based on the ranking for users to show if they have a risk of heart disease or not. The user interface is showed in Figure 3.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=0.35\textwidth]{dataset-1-ui}
+\caption{User interface for the first function}
+\label{fig:dataset-1-ui}
+\end{figure}
 
-show some figure of our application.
-
+For the second function, users have to upload their heart sound wav files recorded from their mobile to predict the risk of two heart diseases, murmur and extrastole. We use models on dataset3 to predict in back-end. We'll get two probablities of murmur and extrastole. If the probablities are too high, then we'll tell users they may have the risk. The user interface is showed in Figure 4.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=0.4\textwidth]{dataset-3-ui}
+\caption{User interface for the second function}
+\label{fig:dataset-3-ui}
+\end{figure}
 \section{Experiment}
 
 \subsection{Experiment Setup}
