@@ -156,7 +156,14 @@ After comparing different kernel functions, the linear one with the penalty para
 
 \subsection{Naive Bayes Optimization}
 
-For Naive Bayes, we
+For Naïve Bayes, three different algorithms of it are provided in scikit-learn.
+\begin{itemize}
+\item GaussianNB: The prior is Gaussian distribution. It is commonly used when the distributions of most sample features are continuous values.$P(X_j|Y=C_k) = \frac{1}{\sqrt{2 \pi \sigma_k^2}}exp(\frac{(x_j-u_k)^2}{2\sigma^2})$.
+\item MultinomialNB: The prior is Multinomial distribution. It is suitable when the distributions of most sample features are multivariate discrete values.$P(X_j|Y=C_k)=\frac{x_j+\lambda}{M_k+n\lambda}$
+\item BernoulliNB: The prior is Bernoulli distribution. We choose this when the distributions of sample features are binary discrete values or very sparse multivariate discrete values.$P(X_j=x_j|Y=C_k)=P(j|Y=C_k)x_j+(1-P(j|Y=C_k))(1-x_j)$
+\end{itemize}
+
+After comparing the performance of these three distributions, we chose GaussianNB for dataset 1 and BernoulliNB for dataset 2.
 
 \section{Conclusion}
 
