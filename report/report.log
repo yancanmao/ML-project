@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  19 APR 2018 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  19 APR 2018 14:18
 entering extended mode
 **./report.tex
 (report.tex
@@ -198,35 +198,74 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 82--83
  [][] 
  []
 
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
+<dataset-1-ui.png, id=11, 441.14813pt x 460.72125pt>
+File: dataset-1-ui.png Graphic file (type png)
+<use dataset-1-ui.png>
+Package pdftex.def Info: dataset-1-ui.png  used on input line 102. on input lin
+e 102.
+Package pdftex.def Info: Requested size: 177.06458pt x 184.91794pt on input lin
+e 102.
 [2 <./dataset-1.jpg> <./dataset-1-impor.png>]
+<dataset-3-ui.png, id=17, 316.18124pt x 337.26pt>
+File: dataset-3-ui.png Graphic file (type png)
+<use dataset-3-ui.png>
+Package pdftex.def Info: dataset-3-ui.png  used on input line 109. on input lin
+e 109.
+Package pdftex.def Info: Requested size: 202.3529pt x 215.84566pt on input line
+ 109.
 
-LaTeX Warning: Citation `ECG' on page 3 undefined on input line 114.
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+
+
+LaTeX Warning: Citation `ECG' on page 3 undefined on input line 128.
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
-<dataset-1-comparison.jpg, id=15, 931.22906pt x 204.01219pt>
+<dataset-1-comparison.jpg, id=18, 931.22906pt x 204.01219pt>
 File: dataset-1-comparison.jpg Graphic file (type jpg)
 <use dataset-1-comparison.jpg>
-Package pdftex.def Info: dataset-1-comparison.jpg  used on input line 118. on i
-nput line 118.
+Package pdftex.def Info: dataset-1-comparison.jpg  used on input line 132. on i
+nput line 132.
 Package pdftex.def Info: Requested size: 202.3529pt x 44.3287pt on input line 1
-18.
-[3 <./dataset-1-comparison.jpg>] (report.aux) ) 
+32.
+[3 <./dataset-1-ui.png (PNG copy)> <./dataset-3-ui.png (PNG copy)> <./dataset-1
+-comparison.jpg>]
+Underfull \hbox (badness 1342) in paragraph at lines 151--152
+[]\OT1/ptm/m/n/10 RBF Ker-nel Func-tion: $\OML/cmm/m/it/10 K\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 exp\OT1/cmr/m/n/10 
+(\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 \OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 x[] \O
+MS/cmsy/m/n/10  
+ []
+
+[4
+
+] (report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1626 strings out of 493312
- 23456 string characters out of 3138894
+ 1640 strings out of 493312
+ 23718 string characters out of 3138894
  84690 words of memory out of 3000000
- 5160 multiletter control sequences out of 15000+200000
+ 5172 multiletter control sequences out of 15000+200000
  15090 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,25p,1305b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (3 pages, 250286 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (4 pages, 382417 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
