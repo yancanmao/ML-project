@@ -65,7 +65,7 @@ def load_data(location):
     dataframe['wav_file_data'] = dataframe['raw_read'].apply(lambda x: x[1])
     dataframe['data_length'] = dataframe['raw_read'].apply(lambda x: len(x[1]))
     #dataframe['fft_feature'] = dataframe['wav_file_data'].apply(lambda x: medfilt(np.abs(fft(x,2048))[:fft_length]/np.max(np.abs(fft(x,2048))),15))
-    dataframe['fft_feature'] = dataframe['wav_file_data'].apply(lambda x: np.abs(fft(x,2*int(1024*4000/dataframe['sample_frequency'])))[:fft_length]/np.max(np.abs(fft(x,2048))))
+    dataframe['fft_feature'] = dataframe['raw_read'].apply(lambda x: np.abs(fft(x[1],2*int(1024*4000/x[0])))[:fft_length]/np.max(np.abs(fft(x[1],2048))))
     dataframe['pulse_feature'] = dataframe['raw_read'].apply(get_pulse_feature)
     dataframe['seconds'] = dataframe['data_length'] / dataframe['sample_frequency']
     
@@ -113,7 +113,7 @@ def pulse_model(pulse_length=pulse_length):
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
     
-    model.compile(loss='binary_crossentropy', optimizer=Adam(lr=0.002), metrics=['accuracy'])
+    model.compile(loss='binary_crossentropy', optimizer=Adam(lr=0.001), metrics=['accuracy'])
     
     return model
     
